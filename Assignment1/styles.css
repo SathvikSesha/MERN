@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #8a2387, #e94057, #f27121);
+    font-family: Arial, sans-serif;
+}
+.dropdown {
+    position: relative;
+    width: 250px;
+}
+.select {
+    background: rgba(255, 255, 255, 0.311);
+    backdrop-filter: blur(10px);
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+.select .caret {
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+    transition: transform 0.3s;
+}
+.menu {
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    display: none;
+}
+.menu li {
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+    color: white;
+    font-size: 16px;
+}
+.menu li i {
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.dropdown.active .menu {
+    display: block;
+}
+.dropdown.active .caret {
+    transform: rotate(135deg);
+}

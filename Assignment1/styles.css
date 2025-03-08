@@ -22,6 +22,10 @@ body {
     color: white;
     font-size: 16px;
 }
+.select a{
+    text-decoration: none;
+    color: white;
+}
 .select .caret {
     width: 10px;
     height: 10px;
@@ -54,7 +58,10 @@ body {
 .menu li i {
     font-size: 18px;
 }
-
+.option a{
+    text-decoration: none;
+    color: white;
+}
 .menu li:hover {
     background: rgba(255, 255, 255, 0.3);
 }
